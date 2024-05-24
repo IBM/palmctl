@@ -1,48 +1,44 @@
 # palmctl
 
-This is the command line interface tool of IBM Hybrid Cloud Mesh (Mesh). It is used to configure and manage the [Mesh product](https://www.ibm.com/products/hybrid-cloud-mesh).
+This is the command-line interface tool for IBM Hybrid Cloud Mesh (Mesh). It is used to configure and manage the [Mesh product](https://www.ibm.com/products/hybrid-cloud-mesh).
 
-You can subscribe to Mesh at [My IBM](https://myibm.ibm.com/). Once you have done that, visit [Mesh CLI Guide](https://www.ibm.com/docs/en/hybrid-cloud-mesh-eap?topic=cli-guide) for a brief overview of `palmctl`, along with its installation procedure and some examples.
+You can subscribe to Mesh at [My IBM](https://myibm.ibm.com/). Once you have done that, visit [Mesh CLI Guide](https://www.ibm.com/docs/en/hybrid-cloud-mesh?topic=cli-guide) for a brief overview of `palmctl`, along with its installation procedure and some examples.
 
 ## Downloading and Installing the CLI on Ubuntu
 
-```
-PALMCTL_FILE_NAME=palmctl-amd64.deb
+```bash
+PALMCTL_FILE_NAME=palmctl_latest_amd64.deb
 curl -sSfLO https://github.com/IBM/palmctl/releases/latest/download/$PALMCTL_FILE_NAME
 sudo apt install "$PWD/$PALMCTL_FILE_NAME"
 ```
-{: codeblock}
 
 ## Downloading and Installing the CLI on RHEL
 
-```
-PALMCTL_FILE_NAME=palmctl-x86_64.rpm
+```bash
+PALMCTL_FILE_NAME=palmctl_latest_x86_64.rpm
 curl -sSfLO https://github.com/IBM/palmctl/releases/latest/download/$PALMCTL_FILE_NAME
 sudo rpm -i "$PWD/$PALMCTL_FILE_NAME"
 ```
-{: codeblock}
 
 ## Downloading and Installing on Mac OSX amd64
 
-```
-PALMCTL_FILE_NAME=palmctl-amd64.tar.gz
+```bash
+PALMCTL_FILE_NAME=palmctl_latest_macos_amd64.tar.gz
 curl -sSfLO https://github.com/IBM/palmctl/releases/latest/download/$PALMCTL_FILE_NAME
 tar -xvf $PALMCTL_FILE_NAME
 sudo ./palmctl/install.sh
 source /usr/local/etc/bash_completion.d/bash_palmctl_completion
 ```
-{: codeblock}
 
 ## Downloading and Installing on Mac OSX arm64
 
-```
-PALMCTL_FILE_NAME=palmctl-arm64.tar.gz
+```bash
+PALMCTL_FILE_NAME=palmctl_latest_macos_arm64.tar.gz
 curl -sSfLO https://github.com/IBM/palmctl/releases/latest/download/$PALMCTL_FILE_NAME
 tar -xvf $PALMCTL_FILE_NAME
 sudo ./palmctl/install.sh
 source /usr/local/etc/bash_completion.d/bash_palmctl_completion
 ```
-{: codeblock}
 
 **Mac OSX notes:**
 
@@ -51,7 +47,6 @@ source /usr/local/etc/bash_completion.d/bash_palmctl_completion
 
 ## Verifying the CLI installation:
 
-```
+```bash
 palmctl --version
 ```
-{: codeblock}
